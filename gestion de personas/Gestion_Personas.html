@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Persona</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema de Registro de Personas</h1>
+    <p>Registras tus datos y explora las diferentes acciones</p>
+
+    <form action="validacion.php" method="POST">
+      <label>Nombre:</label>
+      <input type="text" name="nombre" placeholder="Ingrese sus nombres completos">
+
+      <label>Apellido:</label>
+      <input type="text" name="apellido" placeholder="Ingrese sus apellidos completos">
+
+      <label>Fecha de Nacimiento:</label>
+      <input type="date" name="fecha_nacimiento">
+
+      <label>Email:</label>
+      <input type="email" name="email" placeholder="ejemplo12234@gmail.com">
+
+      <label>Teléfono:</label>
+      <input type="text" name="telefono" placeholder="Ingrese su numero telefonico">
+
+      <label>Género:</label>
+      <select name="genero">
+        <option value="">Seleccione...</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Otro">Otro</option>
+      </select>
+
+      <button type="submit">Registrar Persona</button>
+          
+    </form>
+  </div>
+</body>
+</html>
