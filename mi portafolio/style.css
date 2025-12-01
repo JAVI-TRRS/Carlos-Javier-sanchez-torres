@@ -1,0 +1,104 @@
+h1 {
+    text-align: center;
+    color: #230707;
+}
+body
+{
+    background-color: rgb(74, 132, 199);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 1%;
+    padding: 0;
+}
+
+.contenedor-principal
+{
+    max-width: 80%;
+    margin: 40px auto;
+    background: #ffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 16px rgba(8, 22, 218, 0.6);
+}
+
+.perfil-header
+{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #3155f7;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.perfil-imagen
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 45%;
+    object-fit: cover;
+    margin-right: 24px;
+    border: 3px solid #230707;
+}
+
+.perfil-info h1{
+    margin: 0 0 8px 0;
+    font-size: 2rem;
+    color: #c9c9c9;
+}
+
+.perfil-info .Profesion
+{
+    margin: 0;
+    font-weight: lighter;
+    color:#230707;
+}
+
+.perfil-info .resumen
+{
+    color: #4b4c53;
+    text-align: left;
+    margin-top: 8px;
+}
+
+section
+{
+    margin-bottom: 28px;
+}
+
+h2
+{
+    border-bottom: 1px solid #b5b9b5;
+    padding-bottom: 8px;
+    color:rgb(0, 0, 0);
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+ul
+{
+    padding-left: 18px;
+    margin: 0;
+}
+
+.habilidades ol, .contacto ul
+{
+display: flex;
+gap: 18px;
+flex-wrap: wrap;
+} 
+
+.habilidades li, .contacto li
+{
+    background: #4986cc;
+    padding: 6px 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.trabajo, .eestudio
+{
+    margin-bottom: 14px;
+    padding-left: 7px;
+    border-left: 3px solid #18e4f3;
+}
+
