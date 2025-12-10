@@ -1,0 +1,97 @@
+/* ---------- Estilos generales ---------- */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* ---------- Formulario ---------- */
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Esto hace que sea responsivo */
+}
+
+label {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.input {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 30px;
+  font-size: 1rem;
+  background: #0078ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #005fcc;
+}
+
+/* ---------- Tabla ---------- */
+
+.resultados {
+  margin-top: 40px;
+  overflow-x: auto; /* Hace scroll horizontal en pantallas pequeñas */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Evita que se comprima demasiado */
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+thead {
+  background: #0078ff;
+  color: white;
+}
+
+/* ---------- Responsividad adicional ---------- */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

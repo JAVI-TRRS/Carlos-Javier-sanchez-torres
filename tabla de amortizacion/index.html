@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Amortización</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Simulador de Amortización</h1>
+
+      <form class="form" id="simuladorForm">
+        <div class="form-row">
+          <label>Monto de la deuda
+            <input type="number" id="monto" class="input" required />
+          </label>
+
+          <label>Tasa de Interés (% anual)
+            <input type="number" id="tasa__interes" class="input" required />
+          </label>
+
+          <label>Plazo (meses)
+            <input type="number" id="plazo" class="input" required />
+          </label>
+        </div>
+
+        <button id="form__button" type="submit" class="btn">Calcular</button>
+      </form>
+    </div>
+
+    <p id="mensajes"></p>
+
+    <div class="resultados">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Mes</th>
+            <th>Cuota</th>
+            <th>Interés</th>
+            <th>Capital</th>
+            <th>Saldo</th>
+          </tr>
+        </thead>
+
+        <tbody id="bodyResultados"></tbody>
+      </table>
+    </div>
+
+    <script src="codigo.js"></script>
+  </body>
+</html>
+
