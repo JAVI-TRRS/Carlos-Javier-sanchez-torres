@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Iniciar sesión</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="login.js"></script>
+
+</head>
+<body>
+  <main class="page">
+    <section class="login-card" aria-labelledby="login-title">
+      <h1 id="login-title" class="brand">HGA</h1>
+
+      <form class="login-form" action="#" method="post" novalidate>
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required autocomplete="email" />
+        </div>
+
+        <div class="field">
+          <label for="password">Contraseña</label>
+          <input id="password" name="password" type="password" placeholder="••••••••" required autocomplete="current-password" />
+        </div>
+
+        <div class="options">
+          <label class="checkbox">
+            <input type="checkbox" name="remember" />
+            <span>Recuérdame</span>
+          </label>
+          <a href="Olvidaste_Contraseña.html"> ¿olvidaste tu contraseña?</a>
+        </div>
+
+        <button type="submit" class="btn">Iniciar sesión</button>
+
+        <div class="divider" aria-hidden="true"><span>o</span></div>
+
+        <button type="button" class="btn btn-outline" onclick="location.href='Registrar_Usuario.html'">
+          Crear cuenta
+        </button>
+      </form>
+
+      <footer class="legal">
+        <p>Al iniciar sesión aceptas nuestros <a href="#">Términos</a> y la <a href="#">Política de privacidad</a>.</p>
+      </footer>
+    </section>
+
+    <aside class="info-panel" aria-hidden="true">
+      <div class="info-content">
+        <h2>Bienvenido de nuevo</h2>
+        <p>Inicia sesion para conocer las novedades </p>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
+
