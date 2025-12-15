@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Formulario de Registro</h1>
+    </header>
+    <main>
+        <div class="formulario">
+            <form action="" method="post" class="form">
+                <div class="label">
+                    <label for="nombre">Nombres Completos:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+                </div>
+
+                <div class="label">
+                    <label for="email">Correo Electronico:</label>
+                    <input type="email" name="email" id="email" placeholder="example@mail.com">
+                </div>
+
+                <div class="label">
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" id="edad" placeholder="">
+                </div>
+
+                <div class="label">
+                    <label>Género:</label>
+                    <ol class="lista">
+                        <li><label><input type="radio" name="genero" id="genero1"> Masculino</label></li>
+                        <li><label><input type="radio" name="genero" id="genero2"> Femenino</label></li>
+                        <li><label><input type="radio" name="genero" id="genero3"> Otro</label></li>
+                    </ol>
+                </div>
+
+                <div class="label">
+                    <label>Intereses:</label>
+                    <div class="lista opciones">
+                        <label><input type="checkbox" name="interes" id="int1"> Música</label>
+                        <label><input type="checkbox" name="interes" id="int2"> Deporte</label>
+                        <label><input type="checkbox" name="interes" id="int3"> Tecnología</label>
+                        <label><input type="checkbox" name="interes" id="int4"> Artes</label>
+                        <label><input type="checkbox" name="interes" id="int5"> Gastronomia</label>
+                    </div>
+                </div>
+
+                <div class="label">
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">  
+                        <option value="void" disabled selected>Selecciona tu país</option>
+                        <option value="col">Colombia</option>
+                        <option value="mex">México</option>
+                        <option value="ecu">Ecuador</option>
+                        <option value="ven">Venezuela</option>
+                        <option value="per">Peru</option>
+                        <option value="Bol">Bolivia</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="button">Registar Respuestas</button>
+            </form>
+        </div>
+        
+    </main>
+</body>
+</html>

@@ -1,0 +1,102 @@
+.title{
+    text-align: center;
+    font-size: 1.875rem;
+    margin: 24px 0;
+    color: #1e3a8a;
+}
+
+body{
+    background: #eff6ff;
+    color: #1e293b;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario{
+    margin: 0 auto; 
+    max-width: 480px;
+    background-color: #ffffff;
+    border: 1px solid #bfdbfe;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 8px 24px rgba(37,99,235,0.15);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.label{
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    color: #1e3a8a;
+}
+
+/* 👇 INPUTS MÁS CORTOS */
+.label input[type="text"],
+.label input[type="email"],
+.label input[type="number"],
+.label select{
+    width: 85%;              /* ya no ocupan todo */
+    margin: 6px auto 0;      /* centrados */
+    padding: 12px 14px;
+    border: 1px solid #93c5fd;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    background: #f8fafc;
+    transition: all 0.2s ease;
+    display: block;
+}
+
+.label input[type="text"]:focus,
+.label input[type="email"]:focus,
+.label input[type="number"]:focus,
+.label select:focus{
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.25);
+}
+
+.lista{ 
+    margin: 6px 0 0 1rem;
+    padding-left: 1rem;
+}
+
+ol.lista li{ 
+    margin: 6px 0; 
+}
+
+.opciones label{
+    display: block;
+    font-weight: 400;
+    margin: 8px 0;
+    color: #1e293b;
+}
+
+.button{
+    width: 85%;              /* botón igual que inputs */
+    margin: 16px auto 0;
+    color: #ffffff;
+    background-color: #2563eb;
+    border: 0;
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color .2s ease, transform .1s ease;
+    display: block;
+}
+
+.button:hover{
+    background-color: #1d4ed8;
+}
+
+.button:active{
+    transform: scale(0.98);
+}
