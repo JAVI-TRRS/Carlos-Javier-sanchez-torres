@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+</body>
+   <samp id="respuesta"></samp>
+<script>
+    let num_letra1 = prompt ("ingrese el primer numero: ");
+    let num_letra2 = prompt ("ingrese el segundo numero: ");
+
+    let num1 = parseInt(num_letra1)
+    let num2 = parseInt(num_letra2)
+
+    respuesta = num1+num2;
+      console.log ("la respuesta es:" + respuesta);
+      document.getElementById ("respuesta").innerHTML=
+          "el resultado es:" + respuesta
+
+
+</script>
+</html> 
